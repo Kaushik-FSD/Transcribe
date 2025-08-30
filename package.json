@@ -1,0 +1,28 @@
+{
+  "name": "transcribe",
+  "version": "1.0.0",
+  "description": "A transcription App that takes a transcript as input and returns structured JSON (summary, action items, sentiment) using AI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaushik-FSD/Transcribe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kaushik-FSD/Transcribe/issues"
+  },
+  "homepage": "https://github.com/Kaushik-FSD/Transcribe#readme",
+  "dependencies": {
+    "@google/genai": "^1.16.0",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonrepair": "^3.13.0"
+  }
+}
