@@ -6,6 +6,7 @@ const router = express.Router();
 router.post("/generateSummary", async (req, res) => {
   try {
     const { inputTranscript } = req.body;
+    const { description = "" } = req.body;
 
     if (!inputTranscript) {
       return res.status(400).json({
@@ -14,7 +15,10 @@ router.post("/generateSummary", async (req, res) => {
       });
     }
 
-    const analysedResponse = await analyzeTextTranscript(inputTranscript);
+    const analysedResponse = await analyzeTextTranscript(
+      inputTranscript,
+      description
+    );
     res.json(analysedResponse);
 
     // res.send("Transcript received");
