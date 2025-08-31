@@ -1,6 +1,6 @@
 # 📝 Transcribe - AI Meeting Transcript Analyzer
 
-An AI-powered meeting assistant that processes long meeting transcripts (10k–20k words), extracts **summaries, action items, and sentiment**, and returns clean structured JSON.  
+An AI-powered (api only) meeting assistant that processes long meeting transcripts (10k–20k words), extracts **summaries, action items, and sentiment**, and returns clean structured JSON.  
 Built with **Node.js (Express) + Gemini API**.
 
 ---
