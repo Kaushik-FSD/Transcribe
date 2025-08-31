@@ -18,7 +18,13 @@ Built with **Node.js (Express) + Gemini API**.
 
 ## 📡 API Endpoints
 
-### 1. Analyze Transcript
+### 1. Home Page
+
+A simple home/welcome route (optional).
+
+URL: `GET http://localhost:9988/`
+
+### 2. Analyze Transcript
 
 `POST http://localhost:9988/api/analyze/generateSummary`
 
@@ -54,4 +60,46 @@ Built with **Node.js (Express) + Gemini API**.
     "sentiment": "neutral"
   }
 }
+```
+
+---
+
+## 📌 Future Enhancements
+
+- ✅ **Database Integration** – Persist history of meeting summaries.
+- ✅ **Authentication & Authorization** – Restrict access with user roles.
+- ✅ **Security & Privacy** – Encrypt transcripts (sensitive company data).
+- ✅ **File upload support** – Upload .txt files and read it and then process the transcription.
+
+---
+
+## 📂 Example Use Case
+
+- ✅ Upload a 10k-word meeting transcript.
+- ✅ API splits into smaller chunks and processes them.
+- ✅ Get a clean JSON summary → ready to integrate into dashboards, CRMs, or task trackers like Jira/Asana.
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- Node.js / Express.js – REST API
+- Google Gemini API – LLM for transcript analysis
+- jsonrepair – Fixes broken/partial JSON outputs
+- Custom Chunking Logic – Handles long transcripts
+
+---
+
+## 🏁 Getting Started
+
+```
+# Clone repo
+git clone <your-repo-url>
+cd meeting-transcript-analyzer
+
+# Install dependencies
+npm install
+
+# Start server
+npm start
 ```
